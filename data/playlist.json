@@ -24,8 +24,15 @@
     "duration": 220
   },
 
-    {
+  {
     "name": "Deep Bass",
+    "id": 7777777777,
+    "artist": "Bass Lord",
+    "duration": 220
+  },
+
+   {
+    "name": "Deep Bass2",
     "id": 7777777777,
     "artist": "Bass Lord",
     "duration": 220
