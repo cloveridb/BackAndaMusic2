@@ -35,13 +35,6 @@ const defaultPlaylist = [
     artist: "Bass Lord",
     duration: 220,
     imageId: 6031097225
-  },
-    {
-    name: "Deep Bass2",
-    id: 7777777777,
-    artist: "Bass Lord",
-    duration: 220,
-    imageId: 6031097225
   }
 ];
 
@@ -98,7 +91,8 @@ function addSong(songData) {
     id: parseInt(songData.id),
     artist: songData.artist || 'Unknown Artist',
     duration: songData.duration || 0,
-    imageId: songData.imageId ? parseInt(songData.imageId) : 6031097225  // Default image
+    imageId: songData.imageId ? parseInt(songData.imageId) : 6031097225,
+    requestedBy: songData.requestedBy || 'Unknown'
   };
   
   playlist.push(newSong);
