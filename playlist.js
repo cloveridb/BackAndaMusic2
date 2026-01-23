@@ -9,32 +9,40 @@ const PLAYLIST_FILE = path.join(__dirname, 'data', 'playlist.json');
 // Default playlist jika file belum ada
 const defaultPlaylist = [
   {
-    name: "Summer Vibes",
-    id: 1234567890,
-    artist: "DJ Example",
-    duration: 180,
-    imageId: 6031097225  // rbxassetid://6031097225
+    "name": "Summer Vibes",
+    "id": 118112002914120,
+    "artist": "DJ Example",
+    "duration": 180,
+    "imageId": 80733965864188
   },
   {
-    name: "Night Club Mix",
-    id: 9876543210,
-    artist: "Producer X",
-    duration: 240,
-    imageId: 6031097225
+    "name": "Night Club Mix",
+    "id": 118112002914120,
+    "artist": "Producer X",
+    "duration": 240,
+    "imageId": 85326888491871
   },
   {
-    name: "Chill House",
-    id: 5555555555,
-    artist: "Beat Maker",
-    duration: 200,
-    imageId: 6031097225
+    "name": "Chill House",
+    "id": 118112002914120,
+    "artist": "Beat Maker",
+    "duration": 200,
+    "imageId": 79269678940219
   },
   {
-    name: "Deep Bass",
-    id: 7777777777,
-    artist: "Bass Lord",
-    duration: 220,
-    imageId: 6031097225
+    "name": "Deep Bass",
+    "id": 118112002914120,
+    "artist": "Bass Lord",
+    "duration": 220,
+    "imageId": 124945546063352
+  },
+
+  {
+    "name": "Deep Bass2",
+    "id": 118112002914120,
+    "artist": "Bass Lord",
+    "duration": 220,
+    "imageId": 124945546063352
   }
 ];
 
