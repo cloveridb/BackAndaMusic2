@@ -1,5 +1,5 @@
 // playlist.js
-// Module untuk manage playlist data
+// Module untuk manage playlist data dengan auto-fallback
 
 const fs = require('fs');
 const path = require('path');
@@ -46,6 +46,17 @@ function ensureDataFolder() {
   }
 }
 
+// Normalize song data - pastikan semua field ada
+function normalizeSong(song) {
+  return {
+    name: song.name || 'Unknown Song',
+    id: parseInt(song.id) || 0,
+    artist: song.artist || 'Unknown Artist',
+    duration: parseInt(song.duration) || 0,
+    imageId: parseInt(song.imageId) || 6031097225  // ✅ Auto-fallback ke default image
+  };
+}
+
 // Load playlist dari file
 function loadPlaylist() {
   try {
@@ -53,14 +64,25 @@ function loadPlaylist() {
     
     if (fs.existsSync(PLAYLIST_FILE)) {
       const data = fs.readFileSync(PLAYLIST_FILE, 'utf8');
-      return JSON.parse(data);
+      let playlist = JSON.parse(data);
+      
+      // ✅ Normalize semua songs - auto-add missing fields
+      playlist = playlist.map(normalizeSong);
+      
+      // ✅ Auto-save kembali untuk update struktur file
+      savePlaylist(playlist);
+      
+      console.log(`📀 Loaded ${playlist.length} songs from file`);
+      return playlist;
     } else {
       // File belum ada, buat dengan default playlist
+      console.log('📝 Creating new playlist file...');
       savePlaylist(defaultPlaylist);
       return defaultPlaylist;
     }
   } catch (error) {
     console.error('❌ Error loading playlist:', error.message);
+    console.log('🔄 Using default playlist instead');
     return defaultPlaylist;
   }
 }
@@ -69,7 +91,16 @@ function loadPlaylist() {
 function savePlaylist(playlist) {
   try {
     ensureDataFolder();
-    fs.writeFileSync(PLAYLIST_FILE, JSON.stringify(playlist, null, 2), 'utf8');
+    
+    // ✅ Normalize semua songs sebelum save
+    const normalizedPlaylist = playlist.map(normalizeSong);
+    
+    fs.writeFileSync(
+      PLAYLIST_FILE, 
+      JSON.stringify(normalizedPlaylist, null, 2), 
+      'utf8'
+    );
+    
     console.log('💾 Playlist saved to file');
     return true;
   } catch (error) {
@@ -86,14 +117,17 @@ function getPlaylist() {
 // Add lagu baru
 function addSong(songData) {
   const playlist = loadPlaylist();
-  const newSong = {
-    name: songData.name,
-    id: parseInt(songData.id),
-    artist: songData.artist || 'Unknown Artist',
-    duration: songData.duration || 0,
-    imageId: songData.imageId ? parseInt(songData.imageId) : 6031097225,
-    requestedBy: songData.requestedBy || 'Unknown'
-  };
+  
+  // ✅ Validate required fields
+  if (!songData.name || !songData.id) {
+    return {
+      success: false,
+      error: 'name dan id wajib diisi!'
+    };
+  }
+  
+  // ✅ Normalize data sebelum add
+  const newSong = normalizeSong(songData);
   
   playlist.push(newSong);
   savePlaylist(playlist);
@@ -137,11 +171,18 @@ function updateSong(index, songData) {
     };
   }
   
-  if (songData.name) playlist[index].name = songData.name;
-  if (songData.id) playlist[index].id = parseInt(songData.id);
-  if (songData.artist) playlist[index].artist = songData.artist;
-  if (songData.duration) playlist[index].duration = songData.duration;
-  if (songData.imageId) playlist[index].imageId = parseInt(songData.imageId);
+  // ✅ Update hanya field yang dikirim
+  const updatedSong = {
+    ...playlist[index],
+    ...(songData.name && { name: songData.name }),
+    ...(songData.id && { id: parseInt(songData.id) }),
+    ...(songData.artist && { artist: songData.artist }),
+    ...(songData.duration && { duration: parseInt(songData.duration) }),
+    ...(songData.imageId && { imageId: parseInt(songData.imageId) })
+  };
+  
+  // ✅ Normalize untuk safety
+  playlist[index] = normalizeSong(updatedSong);
   
   savePlaylist(playlist);
   
@@ -151,12 +192,24 @@ function updateSong(index, songData) {
   };
 }
 
+// ✅ BONUS: Clear playlist (reset ke default)
+function resetPlaylist() {
+  savePlaylist(defaultPlaylist);
+  console.log('🔄 Playlist reset to default');
+  return {
+    success: true,
+    message: 'Playlist direset ke default',
+    totalSongs: defaultPlaylist.length
+  };
+}
+
 // Export semua functions
 module.exports = {
   getPlaylist,
   addSong,
   deleteSong,
   updateSong,
+  resetPlaylist,  // ✅ Bonus function
   loadPlaylist,
   savePlaylist
 };
