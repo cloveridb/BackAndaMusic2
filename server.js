@@ -44,17 +44,28 @@ app.get('/api/playlist', (req, res) => {
 
 // POST /api/playlist - Tambah lagu baru
 app.post('/api/playlist', (req, res) => {
-  const { name, id, artist, duration, imageId } = req.body;
+  const { name, id, artist, duration, imageId, requestedBy } = req.body;
   
   // Validasi
-  if (!name || !id) {
+  if (!id) {
     return res.status(400).json({ 
-      error: 'name dan id harus diisi!' 
+      error: 'id harus diisi!' 
     });
   }
   
+  // Jika hanya ID, fetch info dari Roblox (optional)
+  const songName = name || `Song ${id}`;
+  const songArtist = artist || requestedBy || 'Unknown';
+  
   // Tambah lagu menggunakan module
-  const result = playlist.addSong({ name, id, artist, duration, imageId });
+  const result = playlist.addSong({ 
+    name: songName, 
+    id, 
+    artist: songArtist, 
+    duration: duration || 0, 
+    imageId: imageId || 6031097225,
+    requestedBy: requestedBy || 'Unknown'
+  });
   
   console.log('✅ Lagu baru ditambahkan:', result.song);
   
