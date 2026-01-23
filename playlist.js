@@ -35,6 +35,13 @@ const defaultPlaylist = [
     artist: "Bass Lord",
     duration: 220,
     imageId: 6031097225
+  },
+    {
+    name: "Deep Bass2",
+    id: 7777777777,
+    artist: "Bass Lord",
+    duration: 220,
+    imageId: 6031097225
   }
 ];
 
