@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Summer Vibes",
+    "id": 1234567890,
+    "artist": "DJ Example",
+    "duration": 180
+  },
+  {
+    "name": "Night Club Mix",
+    "id": 9876543210,
+    "artist": "Producer X",
+    "duration": 240
+  },
+  {
+    "name": "Chill House",
+    "id": 5555555555,
+    "artist": "Beat Maker",
+    "duration": 200
+  },
+  {
+    "name": "Deep Bass",
+    "id": 7777777777,
+    "artist": "Bass Lord",
+    "duration": 220
+  }
+]
