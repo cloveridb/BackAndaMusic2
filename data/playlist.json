@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Summer Vibes",
+    "id": 118112002914120,
+    "artist": "DJ Example",
+    "duration": 180,
+    "imageId": 6031097225
+  },
+  {
+    "name": "Night Club Mix",
+    "id": 118112002914120,
+    "artist": "Producer X",
+    "duration": 240,
+    "imageId": 6031097225
+  },
+  {
+    "name": "Chill House",
+    "id": 118112002914120,
+    "artist": "Beat Maker",
+    "duration": 200,
+    "imageId": 6031097225
+  },
+  {
+    "name": "Deep Bass",
+    "id": 118112002914120,
+    "artist": "Bass Lord",
+    "duration": 220,
+    "imageId": 6031097225
+  }
+]
