@@ -1,9 +1,7 @@
 // server.js
-// Simple Node.js server untuk Roblox Music System
-
 const express = require('express');
 const cors = require('cors');
-const playlist = require('./playlist'); // Import playlist module
+const playlist = require('./playlist');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -15,7 +13,7 @@ app.use(express.json());
 // ROUTES / ENDPOINTS
 // ============================================
 
-// GET / - Homepage untuk test
+// GET / - Homepage
 app.get('/', (req, res) => {
   const currentPlaylist = playlist.getPlaylist();
   
@@ -26,6 +24,7 @@ app.get('/', (req, res) => {
     <ul>
       <li><a href="/api/playlist">GET /api/playlist</a> - Get semua lagu</li>
       <li>POST /api/playlist - Tambah lagu baru</li>
+      <li>POST /api/request - Request lagu dari Roblox</li>
       <li>PUT /api/playlist/:index - Update lagu</li>
       <li>DELETE /api/playlist/:index - Hapus lagu</li>
     </ul>
@@ -36,35 +35,72 @@ app.get('/', (req, res) => {
 
 // GET /api/playlist - Ambil semua playlist
 app.get('/api/playlist', (req, res) => {
-  console.log('🔥 GET /api/playlist - Request received');
+  console.log('📥 GET /api/playlist - Request received');
   
   const currentPlaylist = playlist.getPlaylist();
   res.json(currentPlaylist);
 });
 
-// POST /api/playlist - Tambah lagu baru
-app.post('/api/playlist', (req, res) => {
-  const { name, id, artist, duration, imageId, requestedBy } = req.body;
+// ✅ NEW: POST /api/request - Request dari Roblox player
+app.post('/api/request', (req, res) => {
+  const { songId, songName, requestedBy, playerUserId } = req.body;
+  
+  console.log('🎵 Song request from:', requestedBy || 'Unknown');
+  console.log('   Song ID:', songId);
   
   // Validasi
+  if (!songId) {
+    return res.status(400).json({ 
+      success: false,
+      error: 'songId harus diisi!' 
+    });
+  }
+  
+  // Tambah lagu ke playlist
+  const result = playlist.addSong({ 
+    name: songName || `Requested Song ${songId}`, 
+    id: songId, 
+    artist: requestedBy || 'Player Request', 
+    duration: 0,  // Akan di-detect otomatis di Roblox
+    imageId: 6031097225,  // Default image
+    requestedBy: requestedBy,
+    playerUserId: playerUserId
+  });
+  
+  if (result.success) {
+    console.log('✅ Song added to playlist:', result.song.name);
+    
+    res.json({
+      success: true,
+      message: `Lagu berhasil ditambahkan ke playlist! (Position: ${result.totalSongs})`,
+      song: result.song,
+      position: result.totalSongs,
+      totalSongs: result.totalSongs
+    });
+  } else {
+    res.status(400).json({
+      success: false,
+      error: result.error
+    });
+  }
+});
+
+// POST /api/playlist - Tambah lagu manual
+app.post('/api/playlist', (req, res) => {
+  const { name, id, artist, duration, imageId } = req.body;
+  
   if (!id) {
     return res.status(400).json({ 
       error: 'id harus diisi!' 
     });
   }
   
-  // Jika hanya ID, fetch info dari Roblox (optional)
-  const songName = name || `Song ${id}`;
-  const songArtist = artist || requestedBy || 'Unknown';
-  
-  // Tambah lagu menggunakan module
   const result = playlist.addSong({ 
-    name: songName, 
+    name: name || `Song ${id}`, 
     id, 
-    artist: songArtist, 
+    artist: artist || 'Unknown', 
     duration: duration || 0, 
-    imageId: imageId || 6031097225,
-    requestedBy: requestedBy || 'Unknown'
+    imageId: imageId || 6031097225
   });
   
   console.log('✅ Lagu baru ditambahkan:', result.song);
@@ -77,18 +113,16 @@ app.post('/api/playlist', (req, res) => {
   });
 });
 
-// DELETE /api/playlist/:index - Hapus lagu by index
+// DELETE /api/playlist/:index
 app.delete('/api/playlist/:index', (req, res) => {
   const index = parseInt(req.params.index);
   
-  // Validasi index
   if (isNaN(index)) {
     return res.status(400).json({ 
       error: 'Index harus berupa angka!' 
     });
   }
   
-  // Hapus lagu menggunakan module
   const result = playlist.deleteSong(index);
   
   if (!result.success) {
@@ -105,19 +139,17 @@ app.delete('/api/playlist/:index', (req, res) => {
   });
 });
 
-// PUT /api/playlist/:index - Update lagu
+// PUT /api/playlist/:index
 app.put('/api/playlist/:index', (req, res) => {
   const index = parseInt(req.params.index);
   const { name, id, artist, duration, imageId } = req.body;
   
-  // Validasi index
   if (isNaN(index)) {
     return res.status(400).json({ 
       error: 'Index harus berupa angka!' 
     });
   }
   
-  // Update lagu menggunakan module
   const result = playlist.updateSong(index, { name, id, artist, duration, imageId });
   
   if (!result.success) {
@@ -150,7 +182,6 @@ app.listen(PORT, () => {
   console.log('');
 });
 
-// Handle shutdown
 process.on('SIGINT', () => {
   console.log('\n👋 Server stopped');
   process.exit(0);
