@@ -13,21 +13,21 @@ const defaultPlaylist = [
     "id": 80733965864188,
     "artist": "DJ Example",
     "duration": 180,
-    "imageId": 80733965864188
+    "imageId": 119182343119362
   },
   {
     "name": "Night Club Mix",
     "id": 85326888491871,
     "artist": "Producer X",
     "duration": 240,
-    "imageId": 85326888491871
+    "imageId": 85827064782630
   },
   {
     "name": "Chill House",
     "id": 79269678940219,
     "artist": "Beat Maker",
     "duration": 200,
-    "imageId": 79269678940219
+    "imageId": 112001916184746
   },
   {
     "name": "Deep Bass",
