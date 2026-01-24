@@ -10,28 +10,28 @@ const PLAYLIST_FILE = path.join(__dirname, 'data', 'playlist.json');
 const defaultPlaylist = [
   {
     "name": "Summer Vibes",
-    "id": 118112002914120,
+    "id": 80733965864188,
     "artist": "DJ Example",
     "duration": 180,
     "imageId": 80733965864188
   },
   {
     "name": "Night Club Mix",
-    "id": 118112002914120,
+    "id": 85326888491871,
     "artist": "Producer X",
     "duration": 240,
     "imageId": 85326888491871
   },
   {
     "name": "Chill House",
-    "id": 118112002914120,
+    "id": 79269678940219,
     "artist": "Beat Maker",
     "duration": 200,
     "imageId": 79269678940219
   },
   {
     "name": "Deep Bass",
-    "id": 118112002914120,
+    "id": 124945546063352,
     "artist": "Bass Lord",
     "duration": 220,
     "imageId": 124945546063352
@@ -39,7 +39,7 @@ const defaultPlaylist = [
 
   {
     "name": "Deep Bass2",
-    "id": 118112002914120,
+    "id": 124945546063352,
     "artist": "Bass Lord",
     "duration": 220,
     "imageId": 124945546063352
