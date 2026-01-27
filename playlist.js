@@ -9,41 +9,782 @@ const PLAYLIST_FILE = path.join(__dirname, 'data', 'playlist.json');
 // Default playlist jika file belum ada
 const defaultPlaylist = [
   {
-    "name": "Summer Vibes",
-    "id": 80733965864188,
-    "artist": "DJ Example",
+    "name": "BKB SO ASU",
+    "id": 118112002914120,
+    "artist": "DJ-Pendos",
     "duration": 180,
-    "imageId": 119182343119362
+    "imageId": 81813750884467
   },
+  
   {
-    "name": "Night Club Mix",
-    "id": 85326888491871,
-    "artist": "Producer X",
-    "duration": 240,
-    "imageId": 85827064782630
-  },
-  {
-    "name": "Chill House",
-    "id": 79269678940219,
-    "artist": "Beat Maker",
-    "duration": 200,
-    "imageId": 112001916184746
-  },
-  {
-    "name": "Deep Bass",
-    "id": 124945546063352,
-    "artist": "Bass Lord",
-    "duration": 220,
-    "imageId": 124945546063352
+    "name": "BKB LOVING YOU",
+    "id": 126121456943912,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
   },
 
   {
-    "name": "Deep Bass2",
+    "name": "BKB TAK BOLAK BALIK",
+    "id": 105438346410368,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB SELINGKUHANKU",
+    "id": 103600693567233,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB MAMA MIA",
+    "id": 84799889768786,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB ALLOW",
+    "id": 77317493977328,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  
+  {
+    "name": "BKB DONT GO",
+    "id": 102276397462431,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB MIXTAPE",
+    "id": 127199656201247,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB PICAH PICAH",
+    "id": 95543689236502,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB PACAR 5 LANGKAH",
+    "id": 92388995798656,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB MASALAH LALU SO ABU",
+    "id": 99894456860007,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB SO ASU",
+    "id": 118112002914120,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+
+  {
+    "name": "BKB YALA HABIBI",
+    "id": 114667834316006,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB PLEASE JANGAN CALLING",
+    "id": 74669940243027,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB MERRYCUS",
+    "id": 123713623524472,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+
+  {
+    "name": "BKB MIXTAPE 2",
+    "id": 83232073457764,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB DINASTY MIA",
+    "id": 76896705241390,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB JAWIR",
+    "id": 78565444434414,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "BKB MOVE-MOVE",
+    "id": 90494166216474,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB TOKYO DRIFTER",
+    "id": 129316467495035,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB JAKARTA HARI IN",
+    "id": 111308945443045,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB DOCTOR CINTA",
+    "id": 71557958769854,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB CHICA LOKA",
+    "id": 98944813036828,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB SOME ONE BEBY",
+    "id": 76133732263245,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "BKB CAN ONE NEED BYE",
+    "id": 116560499214081,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB NO LIFE",
+    "id": 123204767302003,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB BAY BAY",
+    "id": 71398366635242,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "BKB MANGU",
+    "id": 72723618299468,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB LUPA",
+    "id": 72723618299468,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB BAOUNDE",
+    "id": 135222792844365,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB COMING UP",
+    "id": 135932646955348,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "GRAM - MADU",
+    "id": 136470570745449,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "ANJANI KKCLAN",
+    "id": 93305815166786,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  {
+    "name": "MOKONDO 1",
+    "id": 99825695294062,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "DIA - EAA MTM",
+    "id": 126208877263576,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "DIA - IDOCAMPS RINDU PELUKAN",
+    "id": 78137917304733,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "GA GA DULU",
+    "id": 81489729693863,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "TIMUR SESSION 1",
+    "id": 82725740402691,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "TIMUR SESSION 2",
+    "id": 140491667222025,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "TIMUR ORA URUS",
+    "id": 85519422593046,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "TIMUR LUPA",
+    "id": 73445759981901,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "CONTOH",
+    "id": 140491667222025,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "NYONG TIMUR",
+    "id": 115568871481105,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "ADE SU NIKAH",
+    "id": 72105347148515,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "ADE NONA SUKA",
+    "id": 80476485966501,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "GOYANGIN POKOKNYA",
+    "id": 128372995011604,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "Delivery do Flow",
+    "id": 100217109322640,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "LUCID",
+    "id": 97137232603560,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "FEEL ITS",
+    "id": 79993551559521,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "TECHNO LUPA",
+    "id": 127470410136166,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "FAMOS",
+    "id": 113844961235177,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "CONTROLE",
+    "id": 108744925118802,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "WHAT WHAT",
+    "id": 136839244174843,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "DESSERTY",
+    "id": 120348665542377,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "OIIA OIIA IIOU",
+    "id": 97246189384583,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "LIKE I DO",
+    "id": 109640672698002,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "ADELE",
+    "id": 114768738956688,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "DONT BASS",
+    "id": 108242262134804,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BOOM EDM",
+    "id": 95661768680416,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "LUPA EDM",
+    "id": 78621458077686,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "LIAR EDM",
+    "id": 107914883268128,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "LONELY EDM",
+    "id": 80717348246235,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "TITAN EDM",
+    "id": 123182180919303,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "KILAIYY EDM",
+    "id": 122146174259488,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "TOKYO DRIFT EDM",
+    "id": 101932067154487,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "RYMONZ JEDAG JEDUG",
+    "id": 138995712728356,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "RUNAWAY EDM",
+    "id": 124828237860763,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "MULTO EDM",
+    "id": 82692279254554,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "ENAKUEN EDM",
+    "id": 116625227258411,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "MARTIN GARIX - ANIMAL EDM",
+    "id": 87534511965876,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "HC NOT DISNEY HABIBI",
+    "id": 116833699392954,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "HC OH MY GOD",
+    "id": 98062955008812,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "HC WE ARE ALL SLEEPY",
+    "id": 101258911743481,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "HC ANOMALY",
+    "id": 137732134170174,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "PLAT WE ARE",
+    "id": 119166474676037,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "WE ARE GO",
+    "id": 119166474676037,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "COLDPLAY KAN ?",
+    "id": 112680713478711,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "A NEED DOCTOR",
+    "id": 134435343596620,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "ENAK DONG",
+    "id": 134435343596620,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BERDUA DENGAN MU",
+    "id": 135498510317382,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "PLAT WE ARE DUCT",
+    "id": 119166474676037,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "WOK WOK WOK",
+    "id": 121097956830485,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BOY FRIENDS",
+    "id": 101217672562309,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "MINANG LAY",
+    "id": 139456892551348,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "AYANG ",
+    "id": 130490695711977,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "Berharap Tak Berpisah",
+    "id": 126569452040540,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "JANGAN TUNGGU LAMA LAMA",
+    "id": 106968227559597,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "MOSHI MOSHI",
+    "id": 140691924292715,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "THE REDEO",
+    "id": 78959862304443,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "THE KOPI LEMBATA",
+    "id": 110949419969810,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "VXDL Ft MIRZA Titik Nadir | MTM",
+    "id": 81004933511096,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "VXDL | eee a - dia | MTM",
+    "id": 110405880771287,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "VXDL Please, Jangan Calling | MTM | Cleve Baby!",
+    "id": 112226638733164,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+{
+    "name": "Naughty Girl",
+    "id": 85326888491871,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "KOPLO KOPI DANGDUT",
+    "id": 79269678940219,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "KOPLO I GOT EYE",
     "id": 124945546063352,
-    "artist": "Bass Lord",
-    "duration": 220,
-    "imageId": 124945546063352
-  }
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "KOPLO DUA CINCIN",
+    "id": 80733965864188,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+    }
 ];
 
 // Buat folder data jika belum ada
