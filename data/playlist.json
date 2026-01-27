@@ -170,7 +170,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "BKB DOCTOR CINTA",
     "id": 71557958769854,
     "artist": "DJ-Pendos",
@@ -218,7 +218,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "BKB MANGU",
     "id": 72723618299468,
     "artist": "DJ-Pendos",
@@ -265,7 +265,7 @@
     "duration": 180,
     "imageId": 81813750884467
   },
-{
+  {
     "name": "MOKONDO 1",
     "id": 99825695294062,
     "artist": "DJ-Pendos",
@@ -313,7 +313,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "TIMUR ORA URUS",
     "id": 85519422593046,
     "artist": "DJ-Pendos",
@@ -409,7 +409,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "CONTROLE",
     "id": 108744925118802,
     "artist": "DJ-Pendos",
@@ -457,7 +457,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "DONT BASS",
     "id": 108242262134804,
     "artist": "DJ-Pendos",
@@ -505,7 +505,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "KILAIYY EDM",
     "id": 122146174259488,
     "artist": "DJ-Pendos",
@@ -529,7 +529,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "RUNAWAY EDM",
     "id": 124828237860763,
     "artist": "DJ-Pendos",
@@ -553,7 +553,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "MARTIN GARIX - ANIMAL EDM",
     "id": 87534511965876,
     "artist": "DJ-Pendos",
@@ -577,7 +577,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "HC WE ARE ALL SLEEPY",
     "id": 101258911743481,
     "artist": "DJ-Pendos",
@@ -601,7 +601,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "WE ARE GO",
     "id": 119166474676037,
     "artist": "DJ-Pendos",
@@ -625,7 +625,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "ENAK DONG",
     "id": 134435343596620,
     "artist": "DJ-Pendos",
@@ -649,7 +649,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "WOK WOK WOK",
     "id": 121097956830485,
     "artist": "DJ-Pendos",
@@ -673,7 +673,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "AYANG ",
     "id": 130490695711977,
     "artist": "DJ-Pendos",
@@ -697,7 +697,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "MOSHI MOSHI",
     "id": 140691924292715,
     "artist": "DJ-Pendos",
@@ -721,7 +721,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "VXDL Ft MIRZA Titik Nadir",
     "id": 81004933511096,
     "artist": "DJ-Pendos",
@@ -769,15 +769,120 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "KOPLO DUA CINCIN",
     "id": 80733965864188,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "DJ SEDIA PAYUNG",
+    "id": 81638003137173,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "DJ ZEN - DROP ENAKEUN SELENDANG BIRU",
+    "id": 104456981734188,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "DJ BRONDONG TUA",
+    "id": 73348601413805,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "DROP MELODY X RUTINITAS RADONG",
+    "id": 83402424401098,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "SEPARUH NAFAS",
+    "id": 105798515986864,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "Vita Alvia - Goyang Dayung",
+    "id": 135733846954396,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "Rasta - Prayer",
+    "id": 103128893125994,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB Pure Love 2014",
+    "id": 108814308361162,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },  
+  
+  {
+    "name": "BKB ABG TUA",
+    "id": 106371688749737,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB SEMOK BINGIT",
+    "id": 138998492985257,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB TITIK AKHIR",
+    "id": 112381586735149,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "BKB ONE MILLION",
+    "id": 93110122636775,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "BKB WELLY YANK",
+    "id": 109131623110447,
     "artist": "DJ-Pendos",
     "duration": 180,
     "imageId": 81813750884467
   }
 
 ]
+
 
 
 
