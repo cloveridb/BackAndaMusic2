@@ -24,6 +24,61 @@
   },
 
   {
+    "name": "MILWEST LOVE ANTHE",
+    "id": 116231957170487,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "MILWEST KASIH ABA ABA",
+    "id": 135918105969943,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
+    "name": "MILWEST 1 BULAN",
+    "id": 113488345227958,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  {
+    "name": "MILWEST  WE LOVE",
+    "id": 110744192338818,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "MILWEST SUMMER",
+    "id": 107498862952853,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "MILWEST APA YA ?",
+    "id": 81851967179191,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+  
+  {
+    "name": "MILWEST GONE BEFORE",
+    "id": 101056561723405,
+    "artist": "DJ-Pendos",
+    "duration": 180,
+    "imageId": 81813750884467
+  },
+
+  {
     "name": "BKB SELINGKUHANKU",
     "id": 103600693567233,
     "artist": "DJ-Pendos",
@@ -242,7 +297,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "BKB COMING UP",
     "id": 135932646955348,
     "artist": "DJ-Pendos",
@@ -289,7 +344,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "GA GA DULU",
     "id": 81489729693863,
     "artist": "DJ-Pendos",
@@ -337,7 +392,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "NYONG TIMUR",
     "id": 115568871481105,
     "artist": "DJ-Pendos",
@@ -385,7 +440,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "FEEL ITS",
     "id": 79993551559521,
     "artist": "DJ-Pendos",
@@ -433,7 +488,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "OIIA OIIA IIOU",
     "id": 97246189384583,
     "artist": "DJ-Pendos",
@@ -1010,7 +1065,7 @@
   },
 
 
-{
+  {
     "name": "GAMPIL ",
     "id": 96493821662568,
     "artist": "DJ-RYMON",
@@ -1019,7 +1074,7 @@
   },
 
 
-{
+  {
     "name": "PRAU LAYAR ",
     "id": 134750429034382,
     "artist": "DJ-RYMON",
@@ -1028,7 +1083,7 @@
   },
 
 
-{
+  {
     "name": "SATRU ",
     "id": 136989059301312,
     "artist": "DJ-RYMON",
@@ -1036,7 +1091,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "SEBATAS FRIENDLY ",
     "id": 91593951978189,
     "artist": "DJ-RYMON",
@@ -1044,7 +1099,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "DOLA ",
     "id": 131748601036272,
     "artist": "DJ-RYMON",
@@ -1053,7 +1108,7 @@
   },
 
 
-{
+  {
     "name": "SUSU MURNI KOPLO ",
     "id": 95685491503077,
     "artist": "DJ-RYMON",
@@ -1091,7 +1146,7 @@
   },
 
 
-{
+  {
     "name": "KOPLO DRAMA",
     "id": 78324671426275,
     "artist": "DJ-RYMON",
@@ -1099,7 +1154,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "KOPLO TAKE ME HIGHER ",
     "id": 77141968079623,
     "artist": "DJ-RYMON",
@@ -1116,7 +1171,7 @@
   },
 
 
-{
+  {
     "name": "KOPLO SEDIA AKU SEBELUM HUJAN",
     "id": 112314120880363,
     "artist": "DJ-RYMON",
@@ -1124,7 +1179,7 @@
     "imageId": 81813750884467
   },
 
-{
+  {
     "name": "KOPLO NANANA ",
     "id": 108802802943256,
     "artist": "DJ-RYMON",
@@ -1141,6 +1196,7 @@
   }
 
 ]
+
 
 
 
